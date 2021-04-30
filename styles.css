@@ -1,0 +1,116 @@
+.bank_status {
+  font-size: 13px;
+  margin: 0;
+}
+
+.bank_status_bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: #434444;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.bank_status_bars-column {
+  display: flex;
+}
+
+.bank_status_bars-column-down {
+  display: flex;
+  background-color: white;
+  width: 170px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  color: #434444;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.bank_status_bars-column-certifiaction {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+
+i {
+  margin-left: 5px;
+  opacity: 0.5;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+}
+
+.bank_status_bars-column-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 30px;
+  width: 55px;
+  height: 25px;
+  border-radius: 3px;
+  background-color: #04c584;
+  text-align: center;
+}
+
+.bank_status_bars-column-login a {
+  color: white;
+  font-weight: 600;
+}
+
+.bank_status_menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.division_line {
+  width: 1.5px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px 20px;
+  margin-top: 5px;
+}
+
+.bank_status_bars-column-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  float: left;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.bank_status_bars-column-menu li {
+  margin: 55px 60px;
+}
+.bank_status_bars-column-menu a:hover {
+  color: #04c584;
+  border-bottom: 3px solid #04c584;
+}
