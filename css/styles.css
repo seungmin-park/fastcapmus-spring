@@ -1,1 +1,5 @@
 @import "components/status-bars.css";
+
+body {
+  margin: 0;
+}

@@ -1,6 +1,5 @@
 .bank_status {
   font-size: 13px;
-  margin: 0;
 }
 
 .bank_status_bars {
@@ -8,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
   height: 35px;
+  background-color: #fbfbfb;
+  padding: 0px 20px;
 }
 
 a {
@@ -37,7 +38,6 @@ a:visited {
   color: #434444;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
-  margin-right: 10px;
 }
 
 .bank_status_bars-column-certifiaction {
@@ -51,6 +51,7 @@ a:visited {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   padding: 5px 8px;
+  margin-left: 10px;
 }
 
 i {
@@ -75,6 +76,11 @@ img {
   text-align: center;
 }
 
+.bank_status_bars-column-service li {
+  list-style-type: none;
+  float: left;
+}
+
 .bank_status_bars-column-login a {
   color: white;
   font-weight: 600;
@@ -85,17 +91,10 @@ img {
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
-  height: 60px;
+  font-size: 100%;
+  height: 58px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.division_line {
-  width: 1.5px;
-  height: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0px 20px;
-  margin-top: 5px;
 }
 
 .bank_status_bars-column-menu {
@@ -103,14 +102,42 @@ img {
   align-items: center;
   list-style-type: none;
   float: left;
-  font-size: 15px;
+  font-size: 100%;
   font-weight: 600;
 }
 
-.bank_status_bars-column-menu li {
-  margin: 55px 60px;
+.bank_status_bars-column-menu > li {
+  margin: 20px 0px;
+  margin-left: 35px;
+  padding: 0;
 }
 .bank_status_bars-column-menu a:hover {
   color: #04c584;
-  border-bottom: 3px solid #04c584;
+}
+
+.sectionsContainer_1SOlN {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #fbfbfb;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sectionsContainer_1SOlN ul {
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionsContainer_1SOlN li {
+  margin-bottom: 15px;
+  margin-right: 70px;
+}
+
+.bank_status_bars-column-menu > li:hover .sectionsContainer_1SOlN {
+  opacity: 1;
+  visibility: visible;
 }
