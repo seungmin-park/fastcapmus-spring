@@ -1,5 +1,6 @@
 @import "components/status-bars.css";
+@import "components/card-ranks.css";
 
 body {
-  margin: 0;
+  margin-top: 0;
 }

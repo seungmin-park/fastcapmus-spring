@@ -1,5 +1,8 @@
 .bank_status {
   font-size: 13px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .bank_status_bars {
