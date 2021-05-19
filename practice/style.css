@@ -1,0 +1,135 @@
+main {
+  width: 405px;
+  height: 875px;
+  border: 5px solid #00c6ad;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.palylist-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 45px;
+}
+.fa-times {
+  margin-right: 95px;
+}
+
+.show_palyInfo {
+  display: flex;
+}
+
+.fa-image {
+  color: white;
+}
+
+.show_palyInfo-column {
+  width: 130px;
+  height: 135px;
+}
+
+.show_palyInfo-column:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffbd11;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-right: 20px;
+}
+
+.show_palyInfo-column:last-child {
+  width: 180px;
+}
+
+.music_operation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.music_operation-play,
+.music_operation-like,
+.music_operation-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+}
+.music_operation-play {
+  width: 180px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.music_operation-play i {
+  margin-right: 15px;
+}
+
+.music_operation-like {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.music_operation-like,
+.music_operation-add {
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.musicAlbumImage {
+  width: 55px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: #f85a2a;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  border: 2px solid black;
+}
+
+.playListInfo ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.playListInfo li {
+  display: flex;
+}
+
+.musicAlbumImage:nth-child(2) {
+  background-color: #ff89bb;
+}
+.musicAlbumImage:nth-child(3) {
+  background-color: #1847e5;
+}
+.musicAlbumImage:nth-child(4) {
+  background-color: #00c6ad;
+}
+
+.playListInfo li:nth-child(2) .musicAlbumImage {
+  background-color: #ff89bb;
+}
+.playListInfo li:nth-child(3) .musicAlbumImage {
+  background-color: #1847e5;
+}
+.playListInfo li:nth-child(4) .musicAlbumImage {
+  background-color: #00c6ad;
+}
