@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+.musicPlayList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f3f5;
+}
+
+.musicPlayList-column {
+  width: 225px;
+  height: 485px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+}
+
+.musicPlayList-column_status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.musicPlayList-column_singerProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicPlayList-column_singerProfile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.musicPlayList-column_singerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.musicPlayList-column_singerInfo-name {
+  font-size: 25px;
+  font-weight: 660;
+}
+
+.musicPlayList-column_singerInfo-genre {
+  font-size: 12px;
+  font-weight: 600;
+  color: #bfbfbf;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.musicPlayList-column-noname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicPlayList-column-noname-shuffle,
+.musicPlayList-column-noname-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 25px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.musicPlayList-column-noname-shuffle {
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+.musicPlayList-column-noname-like {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fa-heart {
+  margin-right: 5px;
+}
+
+.musicPlayList-column_musicInfo {
+  margin-top: 15px;
+}
+
+.musicPlayList-column_musicInfo-column {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  background-color: #f3f3f5;
+  padding: 10px 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.musicPlayList-column_musicInfo-column-album img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.musicPlayList-column_musicInfo-column-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 55px;
+}
+
+.musicPlayList-column_musicInfo-column-title-singer {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #bfbfbf;
+}
+
+.musicPlayList-column_musicInfo-column-title-music {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.fa-ellipsis-v {
+  color: #bfbfbf;
+}
+
+.test-album img {
+  width: 162px;
+  height: 162px;
+  border-radius: 10px;
+}
