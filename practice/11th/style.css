@@ -20,6 +20,11 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 25px;
+  box-shadow: 0px 5px 50px -5px gray;
+}
+
+.musicPlayList-column {
+  position: relative;
 }
 
 .musicPlayList-column_status-bar {
@@ -39,6 +44,7 @@
   height: 60px;
   border-radius: 50%;
   margin-bottom: 25px;
+  box-shadow: 0px 5px 50px -5px gray;
 }
 
 .musicPlayList-column_singerInfo {
@@ -102,12 +108,25 @@
   height: 45px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-  background-color: #f3f3f5;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  background-color: white;
   padding: 10px 15px;
   border-radius: 15px;
   box-sizing: border-box;
+}
+
+.musicPlayList-column_musicInfo-column-album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.fa-music {
+  position: absolute;
+  left: 6px;
+  opacity: 0.5;
 }
 
 .musicPlayList-column_musicInfo-column-album img {
@@ -120,7 +139,6 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-  margin-right: 55px;
 }
 
 .musicPlayList-column_musicInfo-column-title-singer {
@@ -131,16 +149,145 @@
 }
 
 .musicPlayList-column_musicInfo-column-title-music {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
+}
+
+.musicPlayList-column_musicInfo-column:nth-child(2) {
+  box-shadow: 0px 5px 7px 1px gray;
 }
 
 .fa-ellipsis-v {
   color: #bfbfbf;
 }
 
+.playbutton {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 205px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: black;
+  margin-bottom: 10px;
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: start;
+}
+
+.playbutton-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.playbutton-info_singer {
+  font-size: 11px;
+  margin-bottom: 5px;
+  color: #bfbfbf;
+}
+
+.playbutton-button {
+  color: white;
+}
+
 .test-album img {
   width: 162px;
   height: 162px;
   border-radius: 10px;
+  box-shadow: 0px 5px 50px -5px gray;
+}
+
+.test-album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.album-info_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.album-info_singer {
+  font-size: 13px;
+  font-weight: 600;
+  color: #bfbfbf;
+}
+
+.musicTime {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+.playStatusBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.playStatusBar-full {
+  width: 185px;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+
+.playStatusBar-current {
+  width: 90px;
+  height: 3px;
+  background-color: black;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+}
+
+.playStatusBar-dot {
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+}
+
+.music_controller {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.music_controller i {
+  padding-right: 20px;
+}
+
+.musicPlayList-column_status-bar i {
+  color: black;
+}
+
+.fa-sync,
+.fa-random {
+  color: #bfbfbf;
 }
