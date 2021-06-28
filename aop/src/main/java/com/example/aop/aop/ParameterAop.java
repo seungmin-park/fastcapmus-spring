@@ -12,9 +12,7 @@ import java.lang.reflect.Method;
 public class ParameterAop {
 
     @Pointcut("execution(* com.example.aop.controller..*.*(..))")
-    public void cut(){
-
-    }
+    private void cut(){ }
 
     @Before("cut()")
     public void beforeReturn(JoinPoint joinPoint){
@@ -32,6 +30,8 @@ public class ParameterAop {
 
     @AfterReturning(value = "cut()",returning = "obj")
     public void afterReturn(JoinPoint joinPoint, Object obj){
+
         System.out.println("returning obj");
+        System.out.println(obj);
     }
 }
