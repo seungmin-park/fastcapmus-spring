@@ -1,8 +1,11 @@
 package com.example.validation.dto;
 
+import com.example.validation.annotation.YearMonth;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class User {
     @NotBlank
@@ -16,6 +19,17 @@ public class User {
     @Pattern(regexp = "^\\d{2,3}-\\d{3,4}-\\d{4}$", message = "핸드폰 번호의 양식과 맞지 않습니다. 01x-xxx(x)-xxxx")
     @JsonProperty("phone_number")
     private String phoneNumber;
+
+    @YearMonth
+    private String reqYearMonth;//yyyyMM
+
+    public String getReqYearMonth() {
+        return reqYearMonth;
+    }
+
+    public void setReqYearMonth(String reqYearMonth) {
+        this.reqYearMonth = reqYearMonth;
+    }
 
     public String getName() {
         return name;
@@ -56,6 +70,7 @@ public class User {
                 ", age=" + age +
                 ", email='" + email + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
+                ", reqYearMonth='" + reqYearMonth + '\'' +
                 '}';
     }
 }
